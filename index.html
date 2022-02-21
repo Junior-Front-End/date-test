@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title> Difference between Dates </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href='css/normalize.css' rel='stylesheet' />
+    <link href='css/fontawesome/css/font-awesome.min.css' rel='stylesheet' />
+    <link href="css/vertical-responsive-menu.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/prism.css" rel="stylesheet" /> 
+    <link rel="stylesheet" href="css/persianDatepicker-latoja.css" /> 
+    <script src="js/prism.js"></script>
+    <script src="js/vertical-responsive-menu.min.js"></script>
+</head>
+<body>   
+
+  <!-- ------------------------------------------------ -->
+  <!-- form -->
+  <!-- ------------------------------------------------ -->
+  <form id="dateform"  >
+
+    <h3>
+      Calculate Difference between Dates
+    </h3>
+    
+    <div style="margin: .5em">
+      Date 1: <input type="text" id="date1" class="pdpLatoja" required />  
+      Hour 1: <input type="time" id="hour1" required  />
+    </div>
+
+    <div style="margin: .5em">
+      Date 2: <input type="text" id="date2" class="pdpLatoja" required />
+      Hour 2: <input type="time" id="hour2" required  />
+    </div>
+
+    <div style="margin: 2em">
+      <input type="submit" value="Difference" />
+    </div>
+
+  </form>
+
+  
+  <!-- result will be shown here -->
+  <div id="result" 
+  style="margin-top: 2em; 
+  background-color: lightgray; 
+  height: 20px"> 
+
+  </div>
+
+         
+    <script src="js/jquery-1.10.1.min.js"></script>
+    <script src="js/persianDatepicker.js"></script>
+    <script src="js/date_difference.js"></script>
+    <script>
+        
+        $(".pdpLatoja").persianDatepicker({ 
+            theme: "latoja", 
+            alwaysShow: false, 
+        });     
+
+    </script>
+
+</body>
+</html>
